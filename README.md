@@ -9,6 +9,6 @@ This project contains a sample of data from CORD-19 concerning AI and COVID-19 w
 # Repository structure
 
 1. `/DATA` contains the data used for the econometric model 
-    a.`df_dataframe_R_ottobre_2k22.csv` csv file
-    b. `corona_enviroment_ete.RData` R Environment 
+    - a.`df_dataframe_R_ottobre_2k22.csv` csv file
+    - b. `corona_enviroment_ete.RData` R Environment 
     
