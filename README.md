@@ -25,12 +25,14 @@ This project contains a sample of data from CORD-19 concerning AI and COVID-19 w
 
 
 ## Indicators of "success"
-
+|  |  |
+|-----------------|------------------------|
 | $N_{citations}$ | The number of citations |
 | $M_{attention}(i)$ | The Altmetric score |
 | $I(i)$ | The interdisciplinary spread |
 
 Note: $i$ represents a research publication. 
+
 
 
 
