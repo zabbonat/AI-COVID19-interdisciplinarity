@@ -14,6 +14,7 @@ This project contains a sample of data from CORD-19 concerning AI and COVID-19 w
 
 ## Interdisciplinarity metrics
 
+|--------------------------------------------------------------------------------------------------------------------------------------------|
 | Team | $\mu_{AI}^{team}$ | *AI team metric* is the fraction of the previous AI publications for each author, averaged over the entire time |
 |      | $\mu_{GEN}^{team}$ | *General team metric* is the average "recent" disciplinary dispersion (journal distances) of team authors                 |
 | Knowledge | $\mu_{AI}^{kn}$ | *AI knowledge metric* is the fraction of references using AI keywords |
