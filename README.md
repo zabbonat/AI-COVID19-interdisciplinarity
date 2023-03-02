@@ -20,7 +20,15 @@ This project contains a sample of data from CORD-19 concerning AI and COVID-19 w
 | Knowledge | $\mu_{AI}^{kn}$ | *AI knowledge metric* is the fraction of references using AI keywords |
 |           | $\mu_{GEN}^{kn}$ | *General knowledge metric* is the average distance among all the journals cited in the references |
 
-Note: $\mu$ represents the average value of the corresponding metric.
+
+## Indicators of "success"
+
+| $N_{citations}$ | The number of citations |
+|-----------------|------------------------|
+| $M_{attention}(i)$ | The Altmetric score |
+| $I(i)$ | The interdisciplinary spread |
+
+Note: $i$ represents a research publication. 
 
 
 
