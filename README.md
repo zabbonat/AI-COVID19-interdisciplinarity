@@ -6,11 +6,6 @@ Official repository for **AI and COVID-19: A case of failed interdisciplinarity*
 # Project Description
 This project contains a sample of data from CORD-19 concerning AI and COVID-19 with additional information obtained through other databases (semantic scholar, openAlex)  
 
-# Repository structure
-
-- `/DATA` contains the data used for the econometric model 
-    - `data.csv` - csv file
-
 
 ## Interdisciplinarity metrics
 |      |  |               |
@@ -32,6 +27,13 @@ This project contains a sample of data from CORD-19 concerning AI and COVID-19 w
 | $I(i)$ | The interdisciplinary spread |
 
 Note: $i$ represents a research publication. 
+
+
+# Repository structure
+
+- `/DATA` contains the data used for the econometric model 
+    - `data.csv` - csv file
+
 
 
 
