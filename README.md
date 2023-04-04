@@ -1,5 +1,5 @@
 # Publication
-Official repository for **AI and COVID-19: A case of failed interdisciplinarity**
+Official repository for **Questioning the impact of AI and interdisciplinarity in science: Lessons from COVID-19**
 
 - Keywords: Team Science, Interdisciplinarity, Artificial Intelligence, COVID-19
 
