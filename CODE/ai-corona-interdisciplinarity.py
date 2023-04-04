@@ -300,7 +300,7 @@ words_ai =list(set(map(lambda x:x.lower(),words_ai))) #lower and unique
 # In[6]:
 
 
-df_reference = pd.read_csv('C:/Users/Dilet/Desktop/CORONA/citation_reference/df_reference.csv')
+df_reference = pd.read_csv('df_reference.csv')
 
 
 # In[ ]:
