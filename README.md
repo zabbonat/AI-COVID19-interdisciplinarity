@@ -33,6 +33,9 @@ Note: $i$ represents a research publication.
 
 - `/DATA` contains the data used for the econometric model 
     - `data.csv` - csv file
+- `/CODE` contains the code used for the econometric model and to build indexes and metrics
+    - `ai-corona-interdisciplinarity.py ` - .py file that could be open also as a jupyter notebook and which contains the process for building the metrics and indexes
+    - `rEconometrics.R` - .R file which contains the three built econometric models
 
 
 
