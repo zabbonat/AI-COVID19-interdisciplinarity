@@ -69,16 +69,16 @@ def is_any_ai_element_present(x, words_ai):
 # In[3]:
 
 
-df=pd.read_csv('sample_1ok.csv')
+df = pd.read_csv('sample_1ok.csv')
 # Filter DataFrame to include only rows where 'ISSN' is not null, and select '_id' and 'ISSN' columns
-dfRed=df[~df['ISSN'].isna()][['_id','ISSN']] 
+dfRed = df[~df['ISSN'].isna()][['_id','ISSN']] 
 # Group 'ISSN' values by '_id', convert to set, and reset index to create new DataFrame 'dfList'
-dfList=dfRed.groupby('_id')['ISSN'].apply(set).reset_index()
+dfList = dfRed.groupby('_id')['ISSN'].apply(set).reset_index()
 # Create new column 'combinations' in 'dfList' with list of all possible ISSN combinations for each '_id'
 dfList['combinations']=[list(combinations(test_list, 2)) for test_list in dfList['ISSN']]
 # Flatten list of lists in 'combinations' column using custom 'flattenList' function and create dictionary 'dEd' with frequency of each combination
-allEdges=flattenList(list(dfList['combinations']))
-dEd=collections.Counter(allEdges)
+allEdges = flattenList(list(dfList['combinations']))
+dEd = collections.Counter(allEdges)
 
 
 # In[12]:
@@ -91,7 +91,7 @@ len(dEd)
 
 
 #create empty graph with networkx and add edges from dEd dict with all combinations
-G=nx.Graph()
+G = nx.Graph()
 G.add_edges_from(dEd.keys())
 
 
@@ -125,7 +125,7 @@ for (u, v) in G.edges():
 # In[18]:
 
 
-pk=dict(G.degree(weight='wNorm'))
+pk = dict(G.degree(weight='wNorm'))
 for i in pk.keys():
     pk[i]=0.5*pk[i]
 
@@ -134,30 +134,30 @@ for i in pk.keys():
 
 
 for (u,v) in G.edges():
-    pmi=-(np.log2(G[u][v]['wNorm']/(pk[u]*pk[v])))/(np.log2(G[u][v]['wNorm']))
-    if pmi>0:
-        G[u][v]['pmi']=pmi
+    pmi = -(np.log2(G[u][v]['wNorm']/(pk[u]*pk[v])))/(np.log2(G[u][v]['wNorm']))
+    if pmi > 0:
+        G[u][v]['pmi'] = pmi
     else:
-        G[u][v]['pmi']=0
+        G[u][v]['pmi'] = 0
 
 
 # In[20]:
 
 
-totW=sum([G[u][v]['weight'] for (u,v) in G.edges()])
+totW = sum([G[u][v]['weight'] for (u,v) in G.edges()])
 for (u,v) in G.edges():
-    G[u][v]['wNorm']=G[u][v]['weight']/totW
+    G[u][v]['wNorm'] = G[u][v]['weight']/totW
 
-pk=dict(G.degree(weight='wNorm'))
+pk = dict(G.degree(weight='wNorm'))
 for i in pk.keys():
     pk[i]=0.5*pk[i]
 
 for (u,v) in G.edges():
-    pmi=-(np.log2(G[u][v]['wNorm']/(pk[u]*pk[v])))/(np.log2(G[u][v]['wNorm']))
+    pmi = -(np.log2(G[u][v]['wNorm']/(pk[u]*pk[v])))/(np.log2(G[u][v]['wNorm']))
     if pmi>0:
-        G[u][v]['pmi']=pmi
+        G[u][v]['pmi'] = pmi
     else:
-        G[u][v]['pmi']=0
+        G[u][v]['pmi'] = 0
 
 
 # In[23]:
@@ -176,7 +176,7 @@ nx.write_gexf(G,'journal_similarity_matrix_per_SAMPLE.gexf')
 
 dfList = pd.read_csv('kn_interdisc_score_reference.csv')
 dfList['combinations'] = dfList['combinations'].progress_apply(lambda x : ast.literal_eval(x))
-dfList['pmi_distance_sample']=dfList['combinations'].progress_apply(lambda x:avDistPmi(x))
+dfList['pmi_distance_sample'] = dfList['combinations'].progress_apply(lambda x:avDistPmi(x))
 dfList['pmi_distance_sample'].plot.hist(bins=20,ec='k',fc='orange')
 
 
@@ -185,7 +185,7 @@ dfList['pmi_distance_sample'].plot.hist(bins=20,ec='k',fc='orange')
 # In[3]:
 
 
-words_ai=['artificial intelligence','deep learning','machine learning',
+words_ai = ['artificial intelligence','deep learning','machine learning',
           'convolutional neural','computer vision','convolutional', 
           'neural network','natural language',
           'neural networks',
@@ -294,7 +294,7 @@ words_ai=['artificial intelligence','deep learning','machine learning',
           'Type system', 'Unsupervised learning', 'Vision processing unit', 
           'Watson', 'Weak AI', 'hidden unit', 'hidden layer']
           
-words_ai =list(set(map(lambda x:x.lower(),words_ai))) #lower and unique 
+words_ai = list(set(map(lambda x:x.lower(),words_ai))) #lower and unique 
 
 
 # In[6]:
