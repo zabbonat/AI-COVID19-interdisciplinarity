@@ -26,7 +26,7 @@ import ast
 
 # Create a new list by iterating through each sublist in 'original_list' and appending its elements to 'll'
 def flattenList(original_list):
-    ll=[element for sublist in original_list for element in sublist]
+    ll = [element for sublist in original_list for element in sublist]
     return ll
 
 
@@ -75,7 +75,7 @@ dfRed = df[~df['ISSN'].isna()][['_id','ISSN']]
 # Group 'ISSN' values by '_id', convert to set, and reset index to create new DataFrame 'dfList'
 dfList = dfRed.groupby('_id')['ISSN'].apply(set).reset_index()
 # Create new column 'combinations' in 'dfList' with list of all possible ISSN combinations for each '_id'
-dfList['combinations']=[list(combinations(test_list, 2)) for test_list in dfList['ISSN']]
+dfList['combinations'] = [list(combinations(test_list, 2)) for test_list in dfList['ISSN']]
 # Flatten list of lists in 'combinations' column using custom 'flattenList' function and create dictionary 'dEd' with frequency of each combination
 allEdges = flattenList(list(dfList['combinations']))
 dEd = collections.Counter(allEdges)
