@@ -86,7 +86,7 @@ h = mod2S_JC_attention
 
 
 stargazer(a,c,e,g, b,d,f,h,
-          dep.var.labels=c("Nb. Citations","","","Attention Score", "", "" ),
+          dep.var.labels=c("Nb. Citations","","","", "Attention Score", "", "","" ),
           omit = c("month_year", "Dominant_Topic", "Constant"),
           align=TRUE,
           type="text", 
@@ -120,7 +120,7 @@ spread_P <- lm(pmi_distance_2024_citation_concept ~  score_group + reference_ai_
 
 
 stargazer(spread_B, spread_D, spread_V, spread_P,
-          dep.var.labels=c("Interd. Spread",'',''),
+          dep.var.labels=c("Interd. Spread", "", "", ""),
           omit = c("month_year", "Dominant_Topic", "Constant"),
           align=TRUE,
           type="text", 
