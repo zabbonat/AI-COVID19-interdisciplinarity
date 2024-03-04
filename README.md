@@ -15,7 +15,6 @@ This project contains a sample of data from CORD-19 concerning AI and COVID-19 w
 |      | $Balance^{team}$ | *General team metric* is the average "recent" disciplinary dispersion (journal distances) of team authors    |
 |      | $Disparity^{team}$ | *General team metric* is the average "recent" disciplinary dispersion (journal distances) of team authors    |
 |      | $Variety^{team}$ | *General team metric* is the average "recent" disciplinary dispersion (journal distances) of team authors    |
-
 | Knowledge | $\mu_{AI}^{kn}$ | *AI knowledge metric* is the fraction of references using AI keywords |
 |           | $\mu_{GEN}^{kn}$ | *General knowledge metric* is the average distance among all the journals cited in the references |
 |      | $Balance^{kn}$ | *General team metric* is the average "recent" disciplinary dispersion (journal distances) of team authors    |
