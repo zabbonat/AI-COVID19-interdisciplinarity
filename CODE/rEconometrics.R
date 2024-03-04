@@ -13,7 +13,7 @@ library(plotly)
 library(tibble)
 
 
-df <- read_csv("data_main.csv")
+df = read_csv("data_main.csv")
 names(df) #name of columns
 df = df %>% mutate(altmetrics_score_2024_ln = log(altmetrics_score_2024+1),
                       ai_collaborator = ifelse(score_group > 0, 1, 0),
