@@ -40,9 +40,11 @@ Note: $i$ represents a research publication.
 - `/DATA` contains the data used for the econometric model 
     - `data_main.csv` - csv file
     -  `Reference&Citations.rar` - .rar file containing data_reference.csv & data_citation.csv
+    -  `data_main_senza_preprint.csv` - csv file with `data_main.csv` data but without preprints
 - `/CODE` contains the code used for the econometric model and to build indexes and metrics
     - `Metrics.ipynb ` - Jupyter Notebok which contains the process for building the metrics and indexes
-    - `rEconometrics.R` - R file which contains the econometric models
+    - `rEconometrics_mainFindings.R` - R file which contains the econometric models
+    - `rEconometrics_robustnessCheck.R` - R file which contains the robustness check econometrics models
 
 
 
