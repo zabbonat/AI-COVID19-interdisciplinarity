@@ -10,13 +10,13 @@ This project contains a sample of data from CORD-19 concerning AI and COVID-19 w
 ## Interdisciplinarity metrics
 |      |  |               |
 |------|------------------|----------------------------------------------------------------------------------------------------------------------|
-| Team | $\mu_{AI}^{team}$ | *AI team metric* is the fraction of the previous AI publications for each author, averaged over the entire time |
-|      | $\mu_{GEN}^{team}$ | *General team metric* is the average "recent" disciplinary dispersion (journal distances) of team authors    |
+| Team | AI Team Expertise | *AI team metric* is the fraction of the previous AI publications for each author, averaged over the entire time |
+|      | PMI(Team) | *General team metric* is the average "recent" disciplinary dispersion (journal distances) of team authors    |
 |      | $Balance^{team}$ | *Balance* measures the evenness of the distribution of categories in the team    |
 |      | $Disparity^{team}$ |*Disparity* quantifies the degree of difference or diversity between elements within a set of the n most recent publications per author in the team   |
 |      | $Variety^{team}$ | *Variety* is the number of different disciplines (or journals) of the n most recent publications per author in the team   |
-| Knowledge | $\mu_{AI}^{kn}$ | *AI knowledge metric* is the fraction of references using AI keywords |
-|           | $\mu_{GEN}^{kn}$ | *General knowledge metric* is the average distance among all the journals cited in the references |
+| Knowledge | Share of AI References | *AI knowledge metric* is the fraction of references using AI keywords |
+|           | PMI(References) | *General knowledge metric* is the average distance among all the journals cited in the references |
 |      | $Balance^{kn}$ | *Balance*  measures the evenness of the distribution of categories within a set of references     |
 |      | $Disparity^{kn}$ | *Disparity* quantifies the degree of difference or diversity between elements within a set of references    |
 |      | $Variety^{kn}$ | *Variety* is the number of different disciplines (or journals) cited |
