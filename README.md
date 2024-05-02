@@ -12,7 +12,7 @@ This project contains a sample of data from CORD-19 concerning AI and COVID-19 w
 |------|------------------|----------------------------------------------------------------------------------------------------------------------|
 | Team | *AI Team Expertise* | *AI team metric* is the fraction of the previous AI publications for each author, averaged over the entire time |
 |      | *PMI (Team)* | *General team metric* is the average "recent" disciplinary dispersion (journal distances) of team authors    |
-|      | *Balance (Team}* | *Balance* measures the evenness of the distribution of categories in the team    |
+|      | *Balance (Team)* | *Balance* measures the evenness of the distribution of categories in the team    |
 |      | *Disparity (Team)* |*Disparity* quantifies the degree of difference or diversity between elements within a set of the n most recent publications per author in the team   |
 |      | *Variety (Team)* | *Variety* is the number of different disciplines (or journals) of the n most recent publications per author in the team   |
 | Knowledge | *Share of AI References* | *AI knowledge metric* is the fraction of references using AI keywords |
