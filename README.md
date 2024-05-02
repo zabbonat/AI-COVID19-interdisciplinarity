@@ -4,7 +4,7 @@ Official repository for **Interdisciplinary Research in Artificial Intelligence:
 - Keywords: Team Science, Interdisciplinarity, Artificial Intelligence, COVID-19
 
 # Project Description
-This project contains a sample of data from CORD-19 concerning AI and COVID-19 with additional information obtained through other databases OpenAlex  
+This project contains a sample of data from CORD-19 concerning AI and COVID-19 with additional information obtained through OpenAlex  
 
 
 ## Interdisciplinarity metrics
